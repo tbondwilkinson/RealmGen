@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E24885A71C15ECD2000A64B8 /* StaticTriggerRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24885A61C15ECD2000A64B8 /* StaticTriggerRealm.swift */; };
 		E265E2DE1C13689300605D2C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E265E2DD1C13689300605D2C /* main.swift */; };
+		E265E2F21C138B4C00605D2C /* StaticMedicationRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E265E2F11C138B4C00605D2C /* StaticMedicationRealm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +25,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E24885A61C15ECD2000A64B8 /* StaticTriggerRealm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StaticTriggerRealm.swift; path = RealmGen/Models/StaticTriggerRealm.swift; sourceTree = SOURCE_ROOT; };
 		E265E2DA1C13689300605D2C /* RealmGen */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RealmGen; sourceTree = BUILT_PRODUCTS_DIR; };
 		E265E2DD1C13689300605D2C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		E265E2E41C13696300605D2C /* realmGen.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = realmGen.sh; sourceTree = "<group>"; };
+		E265E2F11C138B4C00605D2C /* StaticMedicationRealm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StaticMedicationRealm.swift; path = RealmGen/Models/StaticMedicationRealm.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +62,21 @@
 		E265E2DC1C13689300605D2C /* RealmGen */ = {
 			isa = PBXGroup;
 			children = (
+				E265E2F01C138ADD00605D2C /* Models */,
+				E265E2E41C13696300605D2C /* realmGen.sh */,
 				E265E2DD1C13689300605D2C /* main.swift */,
 			);
 			path = RealmGen;
+			sourceTree = "<group>";
+		};
+		E265E2F01C138ADD00605D2C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E265E2F11C138B4C00605D2C /* StaticMedicationRealm.swift */,
+				E24885A61C15ECD2000A64B8 /* StaticTriggerRealm.swift */,
+			);
+			name = Models;
+			path = StaticMedication;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,6 +137,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E265E2DE1C13689300605D2C /* main.swift in Sources */,
+				E24885A71C15ECD2000A64B8 /* StaticTriggerRealm.swift in Sources */,
+				E265E2F21C138B4C00605D2C /* StaticMedicationRealm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +258,7 @@
 				E265E2E31C13689300605D2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
