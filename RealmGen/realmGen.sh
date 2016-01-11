@@ -14,7 +14,7 @@ function usage
 
 json=
 reading_swift_files=false
-realm_path="."
+realm_path="./default.realm"
 swift_files=()
 while [ "$1" != "" ]; do
     if [[ "$1" == -* ]]; then

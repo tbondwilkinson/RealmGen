@@ -26,6 +26,7 @@ let data = NSData(contentsOfURL: url)
 let dict = JSON(data: data!).dictionaryObject!
 let modelName = dict["modelName"] as! String
 let objects = dict["objects"] as! [[String: AnyObject]]
+print(realmPath)
 if let realmPath = realmPath {
     Realm.Configuration.defaultConfiguration.path = NSURL.fileURLWithPath(realmPath).path
 }
